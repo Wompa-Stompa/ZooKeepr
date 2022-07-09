@@ -50,7 +50,7 @@ function filterByQuery(query, animalsArray) {
   });
 
   app.get('/api/animals/:id', (req, res) => {
-    const result = findById(req.params.id, animals);
+    const result = findByPk(req.params.id, animals);
       res.json(result);
   });
   
